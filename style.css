@@ -1,0 +1,416 @@
+/* ---------- BASE ---------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f2efe8;
+    color: #171717;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding: 0 4%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+.navbar {
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #c8c4bb;
+}
+
+.logo {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    font-size: 14px;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-bottom: 1px solid #c8c4bb;
+}
+
+.eyebrow,
+.category {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 8vw, 120px);
+    line-height: 0.95;
+
+    max-width: 1100px;
+
+    margin: 30px 0;
+}
+
+.intro {
+    max-width: 500px;
+
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.discover {
+    margin-top: 60px;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    font-size: 12px;
+}
+
+
+/* ---------- PROJECTS ---------- */
+
+.projects {
+    padding: 80px 0;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.project {
+    display: grid;
+
+    grid-template-columns: 1fr 1.5fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+    min-height: 600px;
+
+    border-top: 1px solid #c8c4bb;
+
+    padding: 70px 0;
+}
+
+.project.reverse {
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.project.reverse .project-info {
+    order: 2;
+}
+
+.project.reverse .project-visual {
+    order: 1;
+}
+
+
+/* ---------- PROJECT TEXT ---------- */
+
+.number {
+    font-family: Georgia, serif;
+
+    font-size: 55px;
+
+    color: #934c3d;
+}
+
+.project-info .category {
+    margin: 25px 0 10px;
+}
+
+.project-info h3 {
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+
+    margin-bottom: 20px;
+}
+
+.project-info > p:not(.category) {
+    max-width: 450px;
+
+    line-height: 1.6;
+}
+
+
+/* ---------- TAGS ---------- */
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin: 25px 0;
+}
+
+.tags span {
+    background: #e3dfd7;
+
+    padding: 8px 12px;
+
+    font-size: 12px;
+}
+
+
+/* ---------- LINKS ---------- */
+
+.project-link {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #934c3d;
+
+    text-transform: uppercase;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    border-bottom: 1px solid #934c3d;
+
+    padding-bottom: 5px;
+}
+
+
+/* ---------- VISUAL PLACEHOLDERS ---------- */
+
+.project-visual {
+    width: 100%;
+    height: 450px;
+}
+
+.placeholder {
+    background: #ddd8cf;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    letter-spacing: 2px;
+
+    font-size: 12px;
+}
+
+.placeholder.avocado {
+    font-size: 100px;
+}
+
+.placeholder.dark {
+    background: #222;
+    color: white;
+}
+
+
+/* ---------- CURRENT ---------- */
+
+.current {
+    padding: 80px 0;
+
+    border-top: 1px solid #c8c4bb;
+}
+
+.current-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+}
+
+.current-grid article {
+    border-top: 1px solid #aaa;
+
+    padding-top: 30px;
+}
+
+.current-grid article > span {
+    font-family: Georgia, serif;
+
+    font-size: 40px;
+
+    color: #934c3d;
+}
+
+.current-grid h3 {
+    font-family: Georgia, serif;
+
+    font-size: 26px;
+
+    margin: 15px 0;
+}
+
+.current-grid p:last-child {
+    line-height: 1.5;
+}
+
+
+/* ---------- ABOUT ---------- */
+
+.about {
+    padding: 150px 0;
+
+    border-top: 1px solid #c8c4bb;
+}
+
+.about h2 {
+    font-family: Georgia, serif;
+
+    font-size: clamp(45px, 6vw, 90px);
+
+    margin: 25px 0;
+
+    max-width: 900px;
+}
+
+.about > p:last-child {
+    max-width: 600px;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    border-top: 1px solid #c8c4bb;
+
+    padding: 40px 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 800px) {
+
+    .project,
+    .project.reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .project.reverse .project-info,
+    .project.reverse .project-visual {
+        order: initial;
+    }
+
+    .current-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+}
+
+.project-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.model-container {
+    width: 100%;
+    height: 500px;
+    background: #ddd8cf;
+}
+
+.model-viewer {
+    width: 100%;
+    height: 100%;
+}
+.weather-visual img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: scale-down;
+}
+
+.weather-visual {
+    overflow: hidden;
+    background: white;
+    padding: 15px;
+}
+.footer-links {
+    display: flex;
+    gap: 25px;
+    align-items: flex-end;
+}
+
+.footer-link {
+    color: #934c3d;
+    text-decoration: none;
+    border-bottom: 1px solid #934c3d;
+    padding-bottom: 3px;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.footer-link span {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.footer-link:hover {
+    color: #171717;
+    border-bottom-color: #171717;
+}
+
+.footer-link:hover span {
+    transform: translate(3px, -3px);
+}

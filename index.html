@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Kim Defferrard</title>
+    
+    <script type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+    </script>   
+    <link rel="stylesheet" href="style.css">
+    <script type="module"
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+    </script>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <a href="#" class ="logo">Kim Defferrard</a>
+        
+        <nav>
+            <a href="#projects">Projets</a>
+            <a href="#about">À propos</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <!-- INTRODUCTION -->
+        <section class ="hero">
+            <p class="eyebrow">
+                HUMANITES NUMERIQUES | HISTOIRE 
+            </p>
+            <h1>
+                HISTOIRE x <br>
+                HUMANITES NUMERIQUES
+            </h1>
+            <p class ="intro">
+                J'explore comment les technologies numériques permettent de rechercher, visualiser, expérimenter et transmettre des savoirs. 
+            </p>
+            <a href="#projects" class="discover">
+                ↓ Découvrir mes projets 
+            </a>
+        </section>
+        <!-- PROJETS -->
+         <section id ="projects" class="projects">
+            <div class ="section-title">
+                <h2>Travaux réalisés</h2>
+                <span>2025-2026</span>
+            </div>
+            <!-- PROJET 01 -->
+             <article class="project">
+                <div class="project-info">
+                    <span class="number">01</span>
+                    <p class="category">
+                        VISUALISATION DE DONNEES
+                    </p>
+                    <h3>La météo suisse en 2025</h3>
+                    <p>
+                        Plusieurs visualisations interactives permettant d'explorer une année de données météorologiques en Suisse.
+                    </p>
+                    <div class="tags">
+                        <span>D3.js</span>
+                        <span>JavaScript</span>
+                        <span>Data Visualization</span>
+                    </div>
+                    <a href="projet/meteo/projet.html"
+   class="project-link"
+   target="_blank"
+   rel="noopener noreferrer">
+                        Explorer la météo →
+                    </a>
+                </div>
+                <div class="project-visual weather-visual">
+                    <img src="images/meteo.png" alt="Visualisation de la météo suisse en 2025">
+                </div>
+             </article>
+
+             <!-- PROJETS 02-->
+               <article class="project reverse">
+                <div class="project-info">
+                    <span class="number">02</span>
+                    <p class="category">
+                        FICTION INTERACTIVE
+                    </p>
+                    <h3>La recette parfaite du toast à l'avocat</h3>
+                    <p>
+                        Une fiction interactive dans laquelle les choix
+                        du joueur permettent de rechercher la recette
+                        parfaite du toast à l'avocat.
+                    </p>
+                    <div class="tags">
+                        <span>Interactive fiction</span>
+                        <span>Narrative design</span>
+                        <span>Ren'py</span>
+        
+                    </div>
+                    <a href="https://defkim.itch.io/avocadotoast"
+   class="project-link"
+   target="_blank"
+   rel="noopener noreferrer">
+    Jouer au jeu →
+                    </a>
+                </div>
+                <div class="project-visual placeholder avocado">
+                        <img src="images/avocado.png" alt="Fiction intéractive">
+                </div>
+
+                </div>
+             </article>
+             <!-- PROJET 03 -->
+            <article class="project">
+
+                <div class="project-info">
+
+                    <span class="number">03</span>
+
+                    <p class="category">
+                        DIGITAL HERITAGE
+                    </p>
+
+                    <h3>Modélisation 3D</h3>
+
+                    <p>
+                        Numérisation d'un objet pour le musée cantonal d'archéologie et d'histoire à Lausanne par
+                        photogrammétrie et création d'un modèle 3D.
+                    </p>
+
+                    <div class="tags">
+                        <span>Photogrammetry</span>
+                        <span>RealityScan</span>
+                        <span>3D</span>
+                    </div>
+                </div>
+
+                <div class="project-visual placeholder dark">
+                    <model-viewer
+        src="models/harpon.glb"
+        alt="Modèle 3D d'un objet muséal numérisé par photogrammétrie"
+        camera-controls
+        auto-rotate>
+    </model-viewer>
+                </div>
+
+            </article>
+
+
+            <!-- PROJET 04 -->
+            <article class="project reverse">
+
+                <div class="project-info">
+
+                    <span class="number">04</span>
+
+                    <p class="category">
+                        JEU VIDEO EDUCATIF
+                    </p>
+
+                    <h3>Jeux vidéo 2D</h3>
+
+                    <p>
+                        Conception et développement d'un jeu vidéo à but éducatif, dans le cadre des Mystères de l'UNIL 2026 sur le thème "la métamorphose".
+                    </p>
+
+                    <div class="tags">
+                        <span>Game design</span>
+                        <span>2D</span>
+                        <span>Narrative</span>
+                        <span>Kaplay</span>
+                    </div>
+                    
+                    <a href="https://defkim.itch.io/le-papillon"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Jouer au jeu →
+                    </a>
+                </div>
+
+                </div>
+
+                <div class="project-visual placeholder">
+                    <img src="images/papillon_2.png" alt="Jeu vidéo éducatif">
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- PROJETS EN COURS -->
+        <section class="current">
+
+            <div class="section-title">
+                <h2>Actuellement</h2>
+                <span>EN COURS</span>
+            </div>
+
+            <div class="current-grid">
+
+                <article>
+                    <span>05</span>
+                    <p class="category">EXPOSITION INTERACTIVE</p>
+                    <h3>HISTOIRE DES MEDIAS SUISSE</h3>
+                    <p>Exposition interactive consacrée à l'histoire des médias et leur mutation en Suisse.</p>
+                </article>
+
+                <article>
+                    <span>06</span>
+                    <p class="category">REALITE VIRTUELLE ET AUGMENTEE</p>
+                    <h3>ENVIRONNEMENT IMMERSIF</h3>
+                    <p>Création d'un environnement immersif en réalité virtuelle et augmentée.</p>
+                </article>
+
+       
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section id="about" class="about">
+
+            <p class="category">ABOUT</p>
+
+            <h2>
+                History, data &<br>
+                digital experiences.
+            </h2>
+
+            <p>
+                Étudiante en Master en histoire et humanités numériques
+                à l'Université de Lausanne, je m'intéresse aux nouvelles
+                manières d'étudier, de représenter et de transmettre
+                des savoirs grâce aux outils numériques.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div>
+
+        <p>
+            Kim Defferrard<br>
+            Master Histoire & Humanités Numériques<br>
+            Université de Lausanne
+        </p>
+    </div>
+    <div class="footer-links">
+
+        <a href="mailto:defferrardkim11@gmail.com"
+           class="footer-link">
+            Email <span>↗</span>
+        </a>
+
+        <a href="https://github.com/defkim"
+           class="footer-link"
+           target="_blank"
+           rel="noopener noreferrer">
+            GitHub <span>↗</span>
+        </a>
+
+    </div>
+
+
+        <p>
+            © 2026
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+         </section>
+        
+
+    </main>
+    
+    
+
+    
+    
+</body>
+</html>
